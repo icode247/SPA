@@ -13,6 +13,7 @@ datasource db {
 model Transactions {
   id String @id
   account  String
+  description String
   category String
   reference String
   currency String 

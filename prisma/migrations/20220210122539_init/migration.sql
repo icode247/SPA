@@ -2,6 +2,7 @@
 CREATE TABLE "Transactions" (
     "id" TEXT NOT NULL,
     "account" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
     "category" TEXT NOT NULL,
     "reference" TEXT NOT NULL,
     "currency" TEXT NOT NULL,
