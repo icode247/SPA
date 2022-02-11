@@ -11,7 +11,11 @@ export class TransactionResolver {
     //Get all the transactions.
     @Query(() => [Transactions])
     getTransactions(): Transactions[] {
-        return Prisma.Transactions.findMany();
+         return Prisma.Transactions.findMany({
+            orderBy: [{
+                createdAt: "desc"
+            }]
+        });
     }
 
     // Get single transactions by the id
